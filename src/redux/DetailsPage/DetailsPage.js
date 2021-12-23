@@ -12,7 +12,10 @@ export const eachArt = (id) => async (dispatch) => {
       title,
       id,
       displayDate: data.date_display,
-      imgt: `https://www.artic.edu/iiif/2/${data.image_id}/full/200,/0/default.jpg`,
+      artist: data.artist_display,
+      country: data.place_of_origin,
+      credit: data.credit_line,
+      imgt: `https://www.artic.edu/iiif/2/${data.image_id}/full/100,/0/default.jpg`,
     };
   }).filter((art) => art.id === Number(id));
 

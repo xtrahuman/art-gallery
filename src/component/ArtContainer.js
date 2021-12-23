@@ -3,7 +3,6 @@ import { Routes, Route } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import ArtList from './ArtList';
 import DetailsPage from './DetailsPage';
-import Navbar from './Navbar';
 import NotMatch from './NotMatch';
 import { getArt } from '../redux/ArtList/Artlist';
 
@@ -17,7 +16,6 @@ const ArtContainer = () => {
 
   return (
     <div>
-      <Navbar />
       <Routes>
         <Route path="/" element={<ArtList art={art} />} />
         <Route path="/details/:id" element={<DetailsPage />} />

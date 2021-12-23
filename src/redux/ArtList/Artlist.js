@@ -15,6 +15,7 @@ export const getArt = () => async (dispatch) => {
       title,
       id,
       displayDate: data.date_display,
+      imgcheck: data.image_id,
       imgt: `https://www.artic.edu/iiif/2/${data.image_id}/full/200,/0/default.jpg`,
     };
   });

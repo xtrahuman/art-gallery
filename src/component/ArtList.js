@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
+import { FaRegArrowAltCircleRight } from 'react-icons/fa';
+import gallery from '../images/gallery.svg';
+import Navbar from './Navbar';
 
 const ArtList = ({ art }) => {
   const [input, setInput] = useState('');
@@ -20,19 +23,46 @@ const ArtList = ({ art }) => {
   };
   return (
     <div>
-      <input placeholder="Enter Post Title" onChange={Handlechange} />
-      {allArt.map((art) => (
-        <div key={art.id}>
-          <div><img src={art.imgt} alt="art" /></div>
-          <div>{art.title}</div>
-          <div>
-            <Link to={`/details/${art.id}`}>click here</Link>
+      <Navbar name="Art List" />
+      <div className="artContainer">
+        <div className="ArtGallery">
+          <div className="listImg">
+            <img src={gallery} alt="art" />
+          </div>
+          <div className="artText">
+            <h1>Art Gallery</h1>
+            <p>
+              {`${allArt.length} `}
+              {`ArtWork${allArt.length <= 1 ? '' : 's'}`}
+            </p>
           </div>
         </div>
-      ))}
+        <div className="searchInput d-flex">
+          <input placeholder="search art" onChange={Handlechange} />
+        </div>
+        <div className="d-flex justify-row">
+          <div className="row">
+            {allArt.map((art) => (
+              <div key={art.id} className="artCont">
+                <div className="artFlex">
+                  <div className="img-f"><Link className="artTitle" to={`/details/${art.id}`}><img src={art.imgcheck === null ? gallery : art.imgt} alt="art" /></Link></div>
+                  <div className="artLink">
+                    <Link to={`/details/${art.id}`}><FaRegArrowAltCircleRight className="arrowCircle" /></Link>
+                  </div>
+                </div>
+                <div>
+                  <Link className="artTitle" to={`/details/${art.id}`}>
+                    <p>{art.title}</p>
+                    <p>{art.displayDate}</p>
+                  </Link>
+                </div>
+              </div>
+            ))}
 
+          </div>
+        </div>
+      </div>
     </div>
-
   );
 };
 ArtList.propTypes = {
