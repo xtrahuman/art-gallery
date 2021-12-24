@@ -11,6 +11,8 @@ Home page                                |  details page
 ## Live Demo
 > Click [here](https://art-gallery-project.netlify.app) to see the live preview of the project.
 
+> [link to video](https://drive.google.com/file/d/15FqQc1mx5iqg_-NDpUidSZZQtd4hld-m/view?usp=sharing)
+
 ### Built With
 
 - [React](https://es.reactjs.org/)
