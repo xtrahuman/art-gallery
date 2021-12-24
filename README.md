@@ -1,15 +1,12 @@
-# Bookstore
-- In this task, we worked with the real live data from the SpaceX API. Our task was to build a web application for a company that provides commercial and scientific space travel services. The application allows users to book rockets and dragons, and join selected space missions.
+# Art Gallery
+- In this Project, I created  a react web app that displays the list of art works gotten from art institute of chicago API
 
 ## Project Preview
 
-Rockets page                             |  Dragons page
+Home page                                |  details page
 :---------------------------------------:|:---------------------------------------:
-![](./project_preview/rockets.png)       |  ![](./project_preview/dragons.png) 
+![](./pupblic/Home.PNG)                  |  ![](./public/details.png) 
 
-Missions page view                       |  My Profile page
-:---------------------------------------:|:---------------------------------------:
-![](./project_preview/missions.png)      |  ![](./project_preview/myprofile.png) 
 
 ## Live Demo
 > Click [here](https://space-travelers-hub-react.netlify.app/) to see the live preview of the project.
@@ -29,7 +26,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 1. Clone the repository
    ```sh
-   git clone https://github.com/Chimwemwe-127001/space-travelers-hub.git
+   git clone https://github.com/xtrahuman/art-gallery.git
    ```
 2. Install NPM packages
    ```sh
@@ -41,24 +38,20 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
    ```
 ## Authors
 
-👤 **Chimwemwe Sinyinza**
-
-- GitHub: [@Chimwemwe-127001](https://github.com/Chimwemwe-127001)
-- Twitter: [@chimwewme](https://twitter.com/chimwewme)
-
 👤 **Okpara Tochukwu**
 
 - GitHub: [@xtrahuman](https://github.com/xtrahuman)
-
-👤 **Akinlade Temitope**
-
-- GitHub: [@mckent05](https://github.com/mckent05)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/tochukwuokpara)
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
 Feel free to check the [issues page](../../issues/).
+
+## Acknowledgments
+
+Original design idea by Nelson Sakwa on Behance.
 
 ## Show your support
 
