@@ -9,7 +9,7 @@ Home page                                |  details page
 
 
 ## Live Demo
-> Click [here](https://space-travelers-hub-react.netlify.app/) to see the live preview of the project.
+> Click [here](https://art-gallery-project.netlify.app) to see the live preview of the project.
 
 ### Built With
 
