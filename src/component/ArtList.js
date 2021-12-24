@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
-import PropTypes from 'prop-types';
+import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { FaRegArrowAltCircleRight } from 'react-icons/fa';
 import gallery from '../images/gallery.svg';
 import Navbar from './Navbar';
 
-const ArtList = ({ art }) => {
+const ArtList = () => {
+  const art = useSelector((state) => state.artReducer);
   const [input, setInput] = useState('');
   const allArt = art.filter((art) => {
     let newArt;
@@ -22,7 +23,7 @@ const ArtList = ({ art }) => {
     setInput(e.target.value);
   };
   return (
-    <div>
+    <div className="checkArt">
       <Navbar name="Art List" />
       <div className="artContainer">
         <div className="ArtGallery">
@@ -65,8 +66,4 @@ const ArtList = ({ art }) => {
     </div>
   );
 };
-ArtList.propTypes = {
-  art: PropTypes.oneOfType([PropTypes.array]).isRequired,
-};
-
 export default ArtList;

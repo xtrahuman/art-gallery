@@ -13,7 +13,7 @@ const DetailsPage = () => {
 
   const art = useSelector((state) => state.detailReducer);
   return (
-    <div>
+    <div className="checkDetails">
       <Navbar name="Art Details" />
       {art.map((art) => (
         <div key={art.id}>
