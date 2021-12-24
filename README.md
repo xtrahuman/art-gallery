@@ -5,7 +5,7 @@
 
 Home page                                |  details page
 :---------------------------------------:|:---------------------------------------:
-![](./pupblic/Home.PNG)                  |  ![](./public/details.png) 
+![](./public/home.PNG)                   |  ![](./public/details.PNG) 
 
 
 ## Live Demo
