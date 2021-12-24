@@ -189,11 +189,6 @@ body {
   color: #fff;
 }
 
-.detail-bar p {
-  word-wrap: break-word;
-  width: 48%;
-}
-
 .artTitle p {
   width: 150px;
   margin-top: 5px;
@@ -202,6 +197,11 @@ body {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.detail-bar p {
+  word-wrap: break-word;
+  width: 68%;
 }
 
 .artTitle p:first-child {
@@ -221,11 +221,17 @@ body {
 .detail-bar {
   justify-content: space-between;
   width: 100%;
-  padding: 20px;
+  padding: 35px 10px;
   height: 80px;
   font-size: 16px;
   background-color: #5788e5;
   align-items: center;
+  font-weight: 700;
+}
+
+.p-det {
+  font-size: 14px;
+  font-weight: 400;
 }
 
 .detail-bar:nth-child(even) {
@@ -280,6 +286,11 @@ body {
     width: 50%;
     height: 140%;
   }
+
+  .p-det {
+    font-size: 16px;
+    font-weight: 400;
+  }
 }
 
 @media screen and (min-width: 900px) {
@@ -333,5 +344,9 @@ body {
 
   .searchInput input {
     margin: 10px 20px;
+  }
+  .p-det {
+    font-size: 16px;
+    font-weight: 400;
   }
 }

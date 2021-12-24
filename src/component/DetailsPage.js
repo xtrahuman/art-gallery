@@ -29,19 +29,19 @@ const DetailsPage = () => {
             <p className="p-tile">{art.title}</p>
             <div className="d-flex detail-bar">
               <p>Display date</p>
-              <p>{art.displayDate}</p>
+              <p className="p-det">{art.displayDate}</p>
             </div>
             <div className="d-flex detail-bar">
               <p>Artist Profile</p>
-              <p>{art.artist}</p>
+              <p className="p-det">{art.artist}</p>
             </div>
             <div className="d-flex detail-bar">
               <p>Country of Origin</p>
-              <p>{art.country}</p>
+              <p className="p-det">{art.country}</p>
             </div>
             <div className="d-flex detail-bar">
               <p>Credit</p>
-              <p>{art.credit}</p>
+              <p className="p-det">{art.credit}</p>
             </div>
           </div>
         </div>
