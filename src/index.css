@@ -16,6 +16,10 @@ body {
   font-family: lato, Arial, Helvetica, sans-serif;
 }
 
+.checkArt {
+  width: 100%;
+}
+
 .artContainer {
   display: flex;
   flex-direction: column;
@@ -79,10 +83,11 @@ body {
 
 .justify-row {
   justify-content: center;
+  width: 100%;
 }
 
 .row {
-  max-width: 99%;
+  width: 100%;
   height: auto;
   display: flex;
   flex-direction: row;
