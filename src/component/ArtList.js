@@ -46,17 +46,23 @@ const ArtList = () => {
             {allArt.map((art) => (
               <div key={art.id} className="artCont">
                 <div className="artFlex">
-                  <div className="img-f"><Link className="artTitle" to={`/details/${art.id}`}><img src={art.imgcheck === null ? gallery : art.imgt} alt="art" /></Link></div>
-                  <div className="artLink">
+                  <div className="img-f">
+                    <Link to={`/details/${art.id}`}>
+                      <img src={art.imgcheck === null ? gallery : art.imgt} alt="art" />
+                      <div className="overlay" />
+                    </Link>
+                  </div>
+                  <div className="artLink pos">
                     <Link to={`/details/${art.id}`}><FaRegArrowAltCircleRight className="arrowCircle" /></Link>
                   </div>
+                  <div className="pos pos-b">
+                    <Link className="artTitle" to={`/details/${art.id}`}>
+                      <p>{art.title}</p>
+                      <p>{art.displayDate}</p>
+                    </Link>
+                  </div>
                 </div>
-                <div>
-                  <Link className="artTitle" to={`/details/${art.id}`}>
-                    <p>{art.title}</p>
-                    <p>{art.displayDate}</p>
-                  </Link>
-                </div>
+
               </div>
             ))}
 

@@ -66,7 +66,7 @@ body {
 }
 
 .artText {
-  text-align: end;
+  text-align: center;
 }
 
 .detailText {
@@ -153,13 +153,38 @@ body {
 
 .artFlex {
   display: flex;
+  position: relative;
   justify-content: space-between;
-  height: 50%;
+  height: 95%;
   width: 100%;
+}
+
+.pos {
+  position: absolute;
+}
+
+.pos-b {
+  bottom: 0;
+  transform: translateX(-50%);
+  left: 50%;
+  opacity: 1;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  opacity: 0.6;
+  position: absolute;
+  background: linear-gradient(rgba(0, 0, 0, 0), #4077dd);
+  transition: 1s;
+  cursor: pointer;
 }
 
 .artLink {
   display: flex;
+  right: 15px;
+  top: 15px;
 }
 
 .arrowCircle {
@@ -183,9 +208,14 @@ body {
   transition: 0.5s all ease;
 }
 
+.artFlex:hover .artLink a {
+  color: #fff;
+}
+
 .artTitle {
   margin-bottom: 10px;
   padding-right: 10px;
+  z-index: 1;
   display: flex;
   width: 100%;
   align-items: center;
@@ -218,6 +248,7 @@ body {
 }
 
 .img-f {
+  position: relative;
   width: 100%;
   height: 100%;
   margin: 5px;
@@ -227,7 +258,6 @@ body {
   justify-content: space-between;
   width: 100%;
   padding: 35px 10px;
-  height: 80px;
   font-size: 16px;
   background-color: #5788e5;
   align-items: center;
@@ -254,13 +284,13 @@ body {
 
   .artTitle {
     margin-bottom: 10px;
-    align-items: flex-end;
+    align-items: center;
   }
 
   .artTitle p {
     font-size: 18px;
     width: 200px;
-    text-align: right;
+    text-align: center;
   }
 
   .ArtGallery {
@@ -305,13 +335,13 @@ body {
 
   .artTitle {
     margin-bottom: 20px;
-    align-items: flex-end;
+    align-items: center;
   }
 
   .artTitle p {
     font-size: 18px;
     width: 300px;
-    text-align: right;
+    text-align: center;
   }
 
   .ArtGallery {
@@ -354,5 +384,28 @@ body {
   .p-det {
     font-size: 16px;
     font-weight: 400;
+  }
+
+  .pos-b {
+    bottom: 25%;
+    opacity: 0;
+  }
+
+  .overlay {
+    opacity: 0;
+  }
+
+  .artFlex:hover .overlay {
+    opacity: 1;
+  }
+
+  .artFlex:hover .artLink a {
+    color: #fff;
+  }
+
+  .artFlex:hover .pos-b {
+    opacity: 1;
+    transition: 1s;
+    bottom: 0;
   }
 }
