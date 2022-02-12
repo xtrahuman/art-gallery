@@ -408,4 +408,8 @@ body {
     transition: 1s;
     bottom: 0;
   }
+
+  .desk-container {
+    max-width: 85%;
+  }
 }
